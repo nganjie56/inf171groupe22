@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)https://jenseign.com/apprendre-html-css/documentation-theorie/processing-processing-js-p5-js-bases/ -->
+<html lang="fr-FR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#261e1e">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://jenseign.com/apprendre-html-css/documentation-theorie/processing-processing-js-p5-js-bases/">
+<link rel="manifest" href="https://jenseign.com/html/manifest.json">
+<link href="./Processing_files/css" rel="stylesheet" lazyload="">
+
+ 
+<style> 
+  /*!
+Theme Name: _jenseign
+Theme URI: http://underscores.me/
+Author: Benoit
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jenseign
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+_jenseign is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/article,aside,details,figcaption,footer,header,main,menu,nav,section,summary{display:block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*,*:before,*:after{box-sizing:inherit}.inline{display:inline}.inline-block{display:inline-block}.left{float:left}.right{float:right}.center{margin-right:auto;margin-left:auto}.clear{clear:both}br.clear{clear:both;margin:0;padding:0;border:0;height:0;line-height:1px;font-size:1px}hr.clear{visibility:hidden}.clearfix:after{content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden}.clearfix{display:inline-table;height:1%;display:block}.offscreen{position:absolute;left:-999em;height:1%}.hidden{visibility:hidden}.none{display:none}.todo{opacity:0.5}.todo:hover{opacity:1}.blink{text-decoration:blink}body{font-size:0.9em;line-height:1.5em;font-family:'Georgia', sans-serif;color:#111}@media screen and (min-width: 1024px){body{font-size:1em;line-height:1.6}}.site-content{font-size:1.1em;line-height:1.7em}@media screen and (min-width: 1024px){.site-content{font-size:1.2em;line-height:1.75}}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{display:block;margin:0;padding:0;font-size:100%;font-family:'IBM Plex Sans', sans-serif;font-style:normal;font-weight:700}h1,.h1{font-size:2em;line-height:1.5;margin-bottom:.75em}h2,.h2{font-size:1.5em;line-height:1.2;margin-bottom:.5em;text-transform:uppercase}h3,.h3{font-size:1.25em;line-height:1.2;margin-bottom:.5em}h4,.h4{font-size:1.1em;line-height:1.364;margin-bottom:.5em}h5,.h5{font-size:1em;font-weight:bold;margin-bottom:1.5em}h6,.h6{font-size:1em;font-weight:bold}h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small{font-size:60%;line-height:0}em,i,.i{font-style:italic}strong,b,.b{font-weight:bold}mark,.mark{background:#ff0;color:#000}.smaller{font-size:75%}small,.small{font-size:80%}big,.big{font-size:130%}.bigger{font-size:175%}.biggest{font-size:200%}abbr[title],acronym[title]{text-decoration:none;border-bottom:.1em dotted;cursor:help}@media print{abbr[title]{border-bottom:0}abbr[title]:after{content:" (" attr(title) ")"}}dfn,.dfn{font-weight:bold;font-style:italic}s,strike,del,.del{opacity:.5;text-decoration:line-through}ins,.ins{background-color:rgba(255,255,204,0.5);text-decoration:none}u,.u{text-decoration:underline}sup,.sup,sub,.sub{position:relative;font-size:80%;font-variant:normal;line-height:0;vertical-align:baseline}sup,.sup{top:-0.5em}sub,.sub{bottom:-0.25em}.lead{font-size:120%}.caps{font-variant:small-caps}.quiet{color:#555555}.text-left{text-align:left}.text-right{text-align:right}.text-center{text-align:center}.text-justify{text-align:justify;text-justify:newspaper}ul{list-style-type:disc}ul ul{list-style-type:circle}ul ul ul{list-style-type:square}ol{list-style-type:decimal}ol ol{list-style-type:lower-alpha}ol ol ol{list-style-type:lower-greek}ul ul,ol ol,ul ol,ol ul{margin-top:0;margin-bottom:0}ol,ul{margin-left:1em;-webkit-margin-before:0;-webkit-margin-after:0}dt{font-weight:bold}dd{margin-left:1.5em}.list-none{margin-left:0;list-style:none}.list-none li:before{content:''}.list-square{margin-left:1.5em;list-style:square}.list-square li:before{content:''}.list-disc{margin-left:1.5em;list-style:disc}.list-disc li:before{content:''}.list-circle{margin-left:1.5em;list-style:circle}.list-circle li:before{content:''}.list-decimal{margin-left:1.5em;list-style:decimal}.list-decimal li:before{content:''}.list-inline{margin-left:0}.list-inline li{display:inline-block;margin:0;margin-right:1em}.list-inline li:Last-Child{margin-right:0}.list-inline.list-inline-sep li{margin-right:0}.list-inline.list-inline-sep li:after{content:" | "}.list-inline.list-inline-sep li:Last-Child:after{content:''}.list-inline.list-inline-dash li{margin-right:0}.list-inline.list-inline-dash li:after{content:" - "}.list-inline.list-inline-dash li:Last-Child:after{content:''}.list-inline.list-inline-comma li{margin-right:0}.list-inline.list-inline-comma li:after{content:", "}.list-inline.list-inline-comma li:Last-Child:after{content:". "}.list-block li{display:block;margin-right:0}table{max-width:100%;border-collapse:collapse;border-spacing:0}.table{width:100%}.table caption,.table th,.table td{padding:0.375em}.table caption{font-weight:bold;text-align:left;border-bottom:2px solid}.table th{font-weight:bold}.table th,.table td{border-bottom:1px solid}.table thead th{vertical-align:bottom}.table tbody tr:hover td{background-color:rgba(34,34,34,0.05)}.table tfoot{font-style:italic}.table tfoot td{border-bottom:0;vertical-align:top}@media (max-width: 640px){.table-responsive{width:100%;overflow-y:hidden;overflow-x:scroll;margin-bottom:1.5em}.table-responsive table{width:100%;margin-bottom:0}.table-responsive thead,.table-responsive tbody,.table-responsive tfoot,.table-responsive tr,.table-responsive th,.table-responsive td{white-space:nowrap}}q{quotes:"\201C" "\201D" "\2018" "\2019"}:lang(en)>q{quotes:"\201C" "\201D" "\2018" "\2019"}:lang(fr)>q{quotes:"\00AB\A0" "\A0\00BB" "\201C" "\201D" "\2018" "\2019"}:lang(es)>q{quotes:"\00AB" "\00BB" "\201C" "\201D"}:lang(it)>q{quotes:"\00AB\A0" "\A0\00BB" "\201C" "\201D"}:lang(de)>q{quotes:"\00BB" "\00AB" "\203A" "\2039"}:lang(no)>q{quotes:"\00AB\A0" "\A0\00BB" "\2039" "\203A"}q:before{content:open-quote}q:after{content:close-quote}blockquote{z-index:0;position:relative;padding-left:1.5em;border:solid rgba(34,34,34,0.2);border-width:0 0 0 5px}blockquote:before{z-index:-1;position:absolute;left:0;top:0;content:"\00AB";line-height:0;font-size:10em;color:rgba(34,34,34,0.1)}cite,.cite{font-style:italic}address{font-style:italic}pre,code,kbd,samp,var,tt{font-family:monospace}code{color:#222;font-size:1.2em}pre{white-space:pre-wrap;word-break:break-all;word-wrap:break-word;margin:0}kbd{white-space:nowrap;padding:.1em .3em;background-color:#eee;border:1px solid #aaa;border-radius:4px;box-shadow:0 2px 0 rgba(0,0,0,0.2),0 0 0 1px #fff inset;color:#333}samp{font-weight:bold}var{font-style:italic}.box{display:block;margin-bottom:1.5em;padding:1.5em;border:1px solid}@media print{.box{border:1px solid}}@media (min-width: 640px){.box.right{width:33%;margin-left:1.5em}.box.left{width:33%;margin-right:1.5em}.box.center{width:75%}}p,.p,ul,ol,dl,dd,blockquote,address,pre,.table,fieldset{margin-bottom:1.5em;margin-top:0}p+h1,p+h2,p+h3,p+h4,p+h5,p+h6{margin-top:3em}@media (max-width: 640px){table,td,blockquote,code,pre,textarea,input,iframe,object,embed,video{max-width:100% !important}textarea,table,td,th,pre,code,samp{word-wrap:break-word}pre,code,samp{white-space:pre-line}}@media print{pre,blockquote{page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}@page{margin:2cm .5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}a:visited{color:inherit}a:focus{outline:thin dotted;background:#222222;border-color:#222222;color:#f8f8f8;text-shadow:none}.site-header a:focus{color:#f8f8f8}a:hover{outline:0;cursor:pointer}a:active{outline:0}a:after,a:before,a small{font-size:90%;opacity:.9}a[hreflang]:after{content:" [" attr(hreflang) "]"}a.external:after{content:"\0000a0\279A"}a[hreflang].external:after{content:" [" attr(hreflang) "] ➚"}a.mailto:after{content:"\0000a0\2709"}a.tel:after{content:"\0000a0\2706"}a.download:after{content:"\0000a0\21A7"}a[hreflang].download:after{content:" [" attr(hreflang) "] ↧"}a.audio:after{content:"\0000a0\266B"}a[hreflang].audio:after{content:" [" attr(hreflang) "] ♫"}a img{border:0}@media print{a,a:visited{text-decoration:underline}a:after{content:''}a[rel="external"]:after,a.external:after{content:" (" attr(href) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:''}}@media print{img{max-width:100%}}img{vertical-align:middle}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}img{border:0}svg:not(:root){overflow:hidden}.thumb,.thumb.left{margin:0 10px 10px 0}.thumb.right{margin:0 0 10px 10px}img.round{border-radius:5px}img.circle{border-radius:50%}img.border{background-color:#fff;border:1px solid #bbb}img.shadow{box-shadow:-1px 2px 5px 1px rgba(0,0,0,0.7),-1px 2px 20px rgba(255,255,255,0.6) inset}figure{margin:0;margin-bottom:0.75em;text-align:center;display:block}figure.center{margin-bottom:1.5em}figure.left{margin-right:1.5em}figure.right{margin-left:1.5em}@media (max-width: 640px){figure{margin-bottom:1.5em}figure.left{float:none;margin-right:0}figure.right{float:none;margin-left:0}}.album{margin-bottom:1.5em}.album ul{overflow:hidden;margin:0;list-style:none}.album li{float:left;margin:0;margin:0 10px 10px 0}.album .thumb{margin:0}th{text-align:left}p+pre{margin-top:-1.5em}body{background:#eee;margin:0}blockquote,q{quotes:"" ""}blockquote:before,blockquote:after,q:before,q:after{content:""}hr{background-color:#ccc;border:0;height:1px;box-sizing:content-box;height:0;margin:1.5em 0;border:solid;border-width:1px 0 0}a{text-decoration:none;border-bottom:1px solid currentcolor}p>a,cite>a{border:none;box-shadow:inset 0 -2px 0 #261e1e;padding:2px 1px;color:#111;display:inline;margin:0 -1px;transition:all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1)}@media screen and (min-width: 1024px){p>a,cite>a{box-shadow:inset 0 -5px 0 #261e1e;padding:6px 1px}}p>a:hover,cite>a:hover{color:#fff;background:#261e1e}img{height:auto;max-width:100%;border:0}table{margin:0 0 1.5em;width:100%}button,input[type="button"],input[type="reset"],input[type="submit"]{border:1px solid;border-radius:3px;color:rgba(0,0,0,0.8);font-size:12px;font-size:.75rem;line-height:1;padding:.6em 1em .4em;text-shadow:0 1px 0 rgba(255,255,255,0.8)}button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover{border-color:#ccc #bbb #aaa}button:active,button:focus,input[type="button"]:active,input[type="button"]:focus,input[type="reset"]:active,input[type="reset"]:focus,input[type="submit"]:active,input[type="submit"]:focus{border-color:#aaa #bbb #bbb}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea{color:#666;border:1px solid #ccc;border-radius:20px;padding:3px 9px}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="number"]:focus,input[type="tel"]:focus,input[type="range"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="color"]:focus,textarea:focus{color:#111}select{border:1px solid #ccc}textarea{width:100%}.search-form{display:none}@media screen and (min-width: 960px){.search-form{display:flex;justify-content:center}}.search-field{height:36px;font-size:0.8em;width:120px;margin:14px auto;transition:width .4s ease}.search-field:focus{width:180px;outline:none}@media screen and (min-width: 640px){.search-field{height:30px;margin:9px auto 11px auto}}.search-form .search-submit{display:none}@media screen and (min-width: 640px){.search-form .search-submit{border:none;background:transparent url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iNTBweCIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgNTAgNTAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzUuNSwzNC4xbC0yLjEsMi4xTDI4LDMwLjhjLTEuMywwLjctMi44LDEuMS00LjQsMS4xYy01LDAtOS4xLTQuMS05LjEtOS4xczQuMS05LjEsOS4xLTkuMXM5LjEsNC4xLDkuMSw5LjEKCQljMCwyLjMtMC45LDQuNS0yLjMsNkwzNS41LDM0LjF6IE0yMy42LDI4LjljMy40LDAsNi0yLjcsNi02cy0yLjctNi02LTZzLTYsMi43LTYsNlMyMC4yLDI4LjksMjMuNiwyOC45eiIvPgo8L2c+Cjwvc3ZnPgo=") no-repeat -8px center;height:50px;width:50px;border-radius:0;overflow:hidden;text-indent:50px;display:inline-block}}a{color:#261e1e;background-color:transparent}a:visited{color:#444}a:hover,a:focus,a:active{color:#111}a:focus{outline:thin dotted}a:hover,a:active{outline:0;border:0}.no-border{border:none}.main-navigation{clear:both;display:block;float:left;width:100%}.main-navigation ul{display:none;list-style:none;margin:0;padding-left:0}.main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:1.5em;left:-999em;z-index:99999}.main-navigation ul ul ul{left:-999em;top:0}.main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}.main-navigation ul ul a{width:200px}.main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}.main-navigation li{float:left;position:relative}.main-navigation a{display:block;text-decoration:none}.menu-toggle,.main-navigation.toggled ul{display:block}@media screen and (min-width: 37.5em){.menu-toggle{display:none}.main-navigation ul{display:block}}.comment-navigation,.posts-navigation,.post-navigation{height:40px}.site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}.comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%;height:50px}.comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%;height:50px}.home .footer{margin-top:0}.footer{padding:40px 20px 80px 20px;background:#333;color:#fff;margin:0}.footer .footer-title{max-width:1020px;margin:0 auto;padding:20px}.footer ul{padding:0;margin:0}.menu-pages-container>ul{display:block;padding:0;margin:0 auto;max-width:1020px}.menu-pages-container>ul>li>a{font-weight:bold;min-height:50px;line-height:50px;display:block;border-bottom:1px solid #ddd;color:#ccc}@media screen and (min-width: 640px){.menu-pages-container>ul>li>a{font-size:.8em}}.menu-pages-container>ul .current_page_item>a{color:#fff}.menu-pages-container>ul>li{display:block}@media screen and (min-width: 960px){.menu-pages-container>ul>li{flex:1;margin:0 20px;max-width:300px}}.menu-pages-container>ul li{display:block}.footer-ul{display:block}@media screen and (min-width: 960px){.footer-ul{display:flex;justify-content:center}}.footer-ul>li>a{font-weight:bold}.footer-ul .current_page_item>a{color:#fff}.footer-ul>li{display:block}@media screen and (min-width: 960px){.footer-ul>li{flex:1;margin:0 20px;max-width:300px}}.footer-ul li{display:block}.footer-ul a{text-overflow:ellipsis;overflow:hidden;height:50px;line-height:50px;display:block;border-bottom:1px solid #ddd;color:#ccc;text-decoration:none;font-size:.9em}@media screen and (min-width: 640px){.footer-ul a{font-size:1em}}.footer-ul .children a{padding-left:20px}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute;height:1px;width:1px;overflow:hidden}.screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#111;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}#content[tabindex="-1"]:focus{outline:0}.visuallyhidden{position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}.alignleft{display:inline;float:left;margin-right:1.5em}.alignright{display:inline;float:right;margin-left:1.5em}.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto}.clear:before,.clear:after,.entry-content:before,.entry-content:after,.comment-content:before,.comment-content:after,.site-header:before,.site-header:after,.site-content:before,.site-content:after,.site-footer:before,.site-footer:after{content:"";display:table;table-layout:fixed}.clear:after,.entry-content:after,.comment-content:after,.site-header:after,.site-content:after,.site-footer:after{clear:both}.widget{margin:0 0 1.5em}.widget select{max-width:100%}html{background:#261e1e url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAE0lEQVQYV2P89evXfwY0wEgDQQClRxOnQMa6lwAAAABJRU5ErkJggg==);font-family:sans-serif;box-sizing:border-box;font-size:100.01%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}.wrap{margin:0 auto;max-width:960px;width:100%;padding:1em}@media screen and (min-width: 640px){.wrap{padding:1.5em}}.archive .content-area,.single-post .content-area,.page .content-area{width:100%;margin-top:-1em;margin-bottom:4em;z-index:2;background:#fff;top:-2em;position:relative}.site-content .widget-area{float:right;overflow:hidden;width:25%}.site-footer{clear:both;width:100%}.site-branding{display:flex;flex-direction:row;font-size:0.9em;margin:0 10px}@media screen and (min-width: 640px){.site-branding{height:50px;font-size:1em}}.crumbs{display:flex;flex-wrap:wrap;flex-direction:row}.crumbs .current.b-c{display:none}@media screen and (min-width: 640px){.crumbs .current.b-c{display:flex}}@media screen and (min-width: 640px){.crumbs{height:50px;display:flex;flex-wrap:wrap;flex-direction:row}}.crumbs a{text-decoration:none;font-weight:bold;color:#111;padding:0 10px 0 0;border:none;display:block}.crumbs .current.b-c{height:50px}.crumbs .b-c{display:flex;align-items:center;height:50px;margin:0 10px 0 0}@media screen and (min-width: 640px){.crumbs .b-c{display:inline-flex}}.home .current{display:none}.home .site-title+.b-c{display:none}.home .site-title+.b-c a{display:none}.crumb{overflow:hidden;width:10px;height:10px;border:2px solid #261e1e;border-left:none;border-bottom:none;-webkit-transform:translate(-3px) rotate(45deg);transform:translate(-3px) rotate(45deg);display:inline-block;color:transparent}a.about,a.blog,a.cookie{border:none;line-height:50px;height:50px;padding:0 10px;text-decoration:none;font-weight:bold;margin:0 auto;display:none}@media screen and (min-width: 960px){a.about,a.blog,a.cookie{border:1px solid #ddd;border-top:none;border-bottom:none;margin-left:0;margin-right:8px;display:inline}}a.blog{margin:0 auto;display:none}@media screen and (min-width: 960px){a.blog{border:none;border-left:1px solid #ddd;margin-left:8px;margin-right:0;display:inline}}a.cookie{display:none}@media screen and (min-width: 960px){a.cookie{border:none;border-left:1px solid #ddd;margin-left:auto;margin-right:0;display:inline}}a.menu{margin:0 0 0 auto;height:50px;text-decoration:none;border:0}@media screen and (min-width: 960px){a.menu{margin-left:0}}a.menu:focus,a.menu:active{background:transparent}a.menu:focus g,a.menu:active g{fill:#333}#cookie{text-align:center;font-size:16px;line-height:48px;color:#ddd}.site-title{width:50px;height:50px;display:block;overflow:hidden;margin:0 10px 0 0;font-size:0}.site-title:hover svg{-webkit-animation:animation-logo 1s steps(8) infinite;animation:animation-logo 1s steps(8) infinite}.site-title a{border:none;display:inline-block;height:100%;box-shadow:none;margin:0;padding:0}.site-title a:hover{background:transparent}@-webkit-keyframes animation-logo{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(-400px);transform:translateX(-400px)}}@keyframes animation-logo{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(-400px);transform:translateX(-400px)}}.sticky{display:block}.hentry{margin:0 0 1.5em}.byline,.updated:not(.published){display:none}.single .byline,.group-blog .byline{display:inline}.page-content,.entry-content,.entry-summary{margin:1.5em 0 0}.page-links{clear:both;margin:0 0 1.5em}.entry-title>a{border:none}.entry-title>a:focus{color:#fff}.sur-le-blog{background:#303030;color:#fff;margin:-29px -29px 29px -29px;padding:12px 29px}@media screen and (min-width: 1024px){.page-template-page-single .header-cover .cover{-o-object-fit:cover;object-fit:cover}}.page-template-page-single .header-cover{position:relative;margin-bottom:0;min-height:240px;background:#fff}@media screen and (min-width: 1024px){.page-template-page-single .header-cover{min-height:60vh}}.page-template-page-single .header-cover .entry-title .subtitle{margin-bottom:2em}.header-cover{position:relative;margin-bottom:0;min-height:240px;background:#fff}@media screen and (min-width: 1024px){.header-cover{min-height:30vh}}.header-cover .entry-title{position:absolute;top:0;bottom:0;display:flex;flex-direction:column;margin:0;width:100%;background:transparent;background:rgba(0,0,0,0.4);color:#fff;text-align:center;font-size:calc(4em + 2vw);justify-content:center;line-height:1;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.header-cover .entry-title .subtitle{display:block;font-weight:400;font-size:16px;font-family:'Georgia', serif;margin-top:1.5em}@media screen and (min-width: 640px){.header-cover .entry-title{-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}}.header-cover .cover{width:100%;height:auto}@media screen and (min-width: 1024px){.header-cover .cover{height:60vh;-o-object-fit:contain;object-fit:contain}}.single-ressources .header-cover{transition:background 400ms ease-out}.single-ressources .header-cover:hover{background:#333}.single-ressources .header-cover:hover .entry-title{color:transparent;background:rgba(0,0,0,0)}.single-ressources .header-cover .entry-title{transition:all 400ms ease-out}.cover-empty{width:100%;height:240px;background:#333;background-size:cover;opacity:1}.cover-empty+.entry-title{background:rgba(0,0,0,0)}@media screen and (min-width: 1024px){.cover-empty{height:400px;height:calc(50vh - 50px);-o-object-fit:contain;object-fit:contain}}.small_title{display:inline;font-size:.5em}@media screen and (min-width: 1024px){.small_title{display:none}}.crumbs .small_title{font-size:1em}.big_title{display:none}@media screen and (min-width: 1024px){.big_title{display:inline}}.subnav{display:block;padding-right:20px;padding-bottom:1px;padding-top:20px;background:#ccc}@media screen and (min-width: 640px){.subnav{flex-direction:row;display:flex;flex-wrap:wrap}}.archive .subnav{padding:0 20px}@media screen and (min-width: 640px){.archive .subnav{display:block}}.no-padding{padding:0 20px}.block{display:block}.subnav:empty{display:none;margin:0;padding:0}.home .subnav{margin-right:0;padding:0;margin-bottom:5em}.subpages{position:relative;overflow:hidden;height:240px;background:#fff;text-align:center;flex-grow:1}@media screen and (min-width: 640px){.subpages{width:calc(33.33% - 20px);height:calc(50vh - 20px)}}.subpages .subpages-title{text-transform:none;font-size:1.4em;position:absolute;top:50%;left:50%;z-index:999;display:inline-block;margin:0;padding:10px 12px;border-top:1px solid #261e1e;border-bottom:1px solid #261e1e;background:#fff;color:#111;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}@media screen and (min-width: 640px){.subpages .subpages-title{font-size:1.2em}}@media screen and (min-width: 960px){.subpages .subpages-title{font-size:1.4em}}.page-child .subpages{flex-grow:0;margin-bottom:20px;margin-left:20px}@media screen and (min-width: 640px){.page-child .subpages{margin-left:20px;height:calc(33vw - 25px)}}.subpages-flex{position:relative;display:block;padding:0;height:100%;border-bottom:none;background:#000;text-align:center;text-decoration:none;justify-content:center;align-items:center}.subpages-flex:focus{background:#fff}.subpages-flex:focus .subpage-title{background:#000;color:#f8f8f8}.subpages-flex img{transition:opacity 0.5s;opacity:1}.subpages-flex:hover img{opacity:.2}.home .fit{width:100%;opacity:1}@media screen and (min-width: 640px){.home .fit{-o-object-fit:cover;object-fit:cover}}.single-ressources .header-cover>img{-webkit-filter:grayscale(100%);filter:grayscale(100%)}.gray{-webkit-filter:grayscale(100%) blur(10px);filter:grayscale(100%) blur(10px)}.fit{display:inline-block;margin:0 auto;height:100%;border:0;opacity:1;-o-object-fit:contain;object-fit:contain}@media screen and (min-width: 640px){.fit{height:100%;transition:-webkit-filter .5s ease;transition:filter .5s ease;transition:filter .5s ease, -webkit-filter .5s ease;-o-object-fit:cover;object-fit:cover}}.msry{margin:0 auto;padding:25px 0}@media screen and (min-width: 960px){.msry{margin:0 auto;width:960px;padding:20px 0 20px 100px}}@media screen and (min-width: 1200px){.msry{width:1200px;padding-bottom:100px}}.ressource{margin-bottom:25px;width:100%;display:block;box-shadow:2px 2px 2px rgba(0,0,0,0.1);background:#fff;opacity:0}@media screen and (min-width: 640px){.ressource{width:calc(50% - 12.5px)}}@media screen and (min-width: 960px){.ressource{width:303.33px}}@media screen and (min-width: 1200px){.ressource{width:281.25px}}.ressource.shown{opacity:1}.ressource .subpages-title{margin:.5em 8px}.ressource .subpages-title a{color:#261e1e}.ressource a{border:none}.ressource>a:focus,.ressource>a:hover,.ressource>a:active{color:transparent;background:transparent}.ressource .subpages-title>a:focus,.ressource .subpages-title>a:hover,.ressource .subpages-title>a:active{color:#555}.animate{-webkit-transform:translateY(200px);transform:translateY(200px);-webkit-animation:moveUp 0.65s ease forwards;animation:moveUp 0.65s ease forwards}@-webkit-keyframes moveUp{0%{}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes moveUp{0%{}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}.tags{margin:8px}.tags a{padding:.2em .4em;background:#333;color:#fff;font-size:0.7em}.post+.post::before{content:'';display:block;height:60px;background-color:#eee;margin:1em -1.5em 2em -1.5em;border-bottom:15px solid #333}.post+.post{margin-top:60px}.post .entry-title{margin-bottom:.25em}.post .entry-title a{color:#261e1e}.post .entry-meta,.post .entry-footer{font-size:16px}.single-post .entry-footer{margin-bottom:72px}.comment-content a{word-wrap:break-word}.bypostauthor{display:block}.incom-comments-wrapper{background:transparent;padding:0 24px 0 20px;margin:0;border:0;font-family:'Georgia', sans-serif}.incom-comments-wrapper label{margin-bottom:.5em;display:block}.incom-cancel.incom-cancel-x{font-size:0;width:50px;height:50px;display:block;background:red;position:relative;top:-50px}.comments-area{display:none}.infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}.infinity-end.neverending .site-footer{display:block}.wp-geshi-highlight pre,.wp-geshi-highlight span{overflow:visible;margin:0;padding:0;border:none;box-shadow:none;background:none;white-space:pre-wrap;word-break:normal;word-wrap:break-word;white-space:pre;font-size:14px}.wp-geshi-highlight ol{margin:0;padding:0;list-style-type:decimal}.wp-geshi-highlight ol>li{position:relative;margin:0 0 0 40px}.wp-geshi-highlight li{padding-left:2px;list-style:decimal}.wp-geshi-highlight{margin:2px 0 30px 0;overflow-x:auto;border:1px solid #ccc;background:linear-gradient(#333 0, #333 40px, #fff 40px)}.wp-geshi-highlight>div{padding:0px 12px 7px 12px;position:relative}.wp-geshi-highlight div ol li{background-color:#fdfdfd}.html5::before{display:block;content:'html';padding:3px 12px;margin:0 -12px;color:#fff;font-family:Georgia,serif;margin-bottom:7px;width:100%}.css::before{display:block;content:'css';padding:3px 12px;margin:0 -12px;color:#fff;font-family:Georgia,serif;margin-bottom:7px;width:100%}.javascript::before{display:block;content:'js';padding:3px 12px;margin:0 -12px;color:#fff;font-family:Georgia,serif;margin-bottom:7px;width:100%}.page-content .wp-smiley,.entry-content .wp-smiley,.comment-content .wp-smiley{border:none;margin-bottom:0;margin-top:0;padding:0}embed,iframe,object{max-width:100%}.video-container{position:relative;padding-bottom:52.9%;padding-top:30px;height:0;overflow:hidden}.video-container iframe,.video-container object,.video-container embed{position:absolute;top:0;left:0;width:100%;height:100%}.fullwidth{margin:0;transition:margin .4s ease-out}.fullwidth:hover,.fullwidth:focus{margin:0 calc(-50vw + 50% + 20px)}@media screen and (min-width: 1400px){.fullwidth:hover,.fullwidth:focus{margin:0 calc(-50vw + 50% + 100px)}}.wp-caption{margin-bottom:1.5em;max-width:100%}.wp-caption img[class*="wp-image-"]{display:block;margin-left:auto;margin-right:auto}.wp-caption .wp-caption-text{margin:0.8075em 0}.wp-caption-text{text-align:center;font-size:.8em;font-family:sans-serif}.wp-caption br{display:none}.gallery{margin-bottom:1.5em}.gallery-item{display:inline-block;text-align:center;vertical-align:top;width:100%}.gallery-columns-2 .gallery-item{max-width:50%}.gallery-columns-3 .gallery-item{max-width:33.33%}.gallery-columns-4 .gallery-item{max-width:25%}.gallery-columns-5 .gallery-item{max-width:20%}.gallery-columns-6 .gallery-item{max-width:16.66%}.gallery-columns-7 .gallery-item{max-width:14.28%}.gallery-columns-8 .gallery-item{max-width:12.5%}.gallery-columns-9 .gallery-item{max-width:11.11%}.gallery-caption{display:block}
+/*# sourceMappingURL=style.css.map */</style>
+<title>Processing et JS,  les bases - Code + HTML + CSS</title>
+<meta name="description" content="Historique Pour faire court, l&#39;histoire de Processing commence avec son ancêtre, Design by Number par John Maeda. Processing sera son prolongement plus complet par deux de ses anciens étudiants Benjamin Fry et Casey Reas. Les points forts étant la simplicité de l&#39;écriture peu verbeuse, l&#39;approche pédagogique et artistique, la communauté…">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://jenseign.com/apprendre-html-css/documentation-theorie/processing-processing-js-p5-js-bases/">
+<meta property="og:url" content="https://jenseign.com/apprendre-html-css/documentation-theorie/processing-processing-js-p5-js-bases/">
+<meta property="og:site_name" content="Code + HTML + CSS">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Processing et JS,  les bases - Code + HTML + CSS">
+<meta property="og:description" content="Historique Pour faire court, l&#39;histoire de Processing commence avec son ancêtre, Design by Number par John Maeda. Processing sera son prolongement plus complet par deux de ses anciens étudiants Benjamin Fry et Casey Reas. Les points forts étant la simplicité de l&#39;écriture peu verbeuse, l&#39;approche pédagogique et artistique, la communauté…">
+<meta property="og:image" content="https://jenseign.com/html/wp-content/uploads/2017/07/44041_retina_lg.png">
+<meta property="og:image:secure_url" content="https://jenseign.com/html/wp-content/uploads/2017/07/44041_retina_lg.png">
+<meta property="og:image:width" content="1560">
+<meta property="og:image:height" content="1358">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@benoitwimart">
+<meta name="twitter:creator" content="@benoitwimart">
+<meta name="twitter:title" content="Processing et JS,  les bases - Code + HTML + CSS">
+<meta name="twitter:description" content="Historique Pour faire court, l&#39;histoire de Processing commence avec son ancêtre, Design by Number par John Maeda. Processing sera son prolongement plus complet par deux de ses anciens étudiants Benjamin Fry et Casey Reas. Les points forts étant la simplicité de l&#39;écriture peu verbeuse, l&#39;approche pédagogique et artistique, la communauté…">
+<meta name="twitter:image:src" content="https://jenseign.com/html/wp-content/uploads/2017/07/44041_retina_lg-1200x1045.png">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Code + HTML + CSS » Flux" href="https://jenseign.com/feed/">
+        <script type="application/ld+json">
+            {"@context":"https:\/\/schema.org","@type":"Person","name":"benoit wimart","url":"https:\/\/jenseign.com\/html","sameAs":["https:\/\/twitter.com\/@benoitwimart"]}        </script>
+        <link rel="stylesheet" id="wp-block-library-css" href="./Processing_files/style.min.css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://jenseign.com/wp-json/"><link rel="alternate" type="application/json" href="https://jenseign.com/wp-json/wp/v2/pages/696"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://jenseign.com/html/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://jenseign.com/html/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.2">
+<link rel="shortlink" href="https://jenseign.com/?p=696">
+<link rel="icon" href="https://jenseign.com/html/wp-content/uploads/2017/09/cropped-jenseign@3x-32x32.png" sizes="32x32">
+<link rel="icon" href="https://jenseign.com/html/wp-content/uploads/2017/09/cropped-jenseign@3x-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://jenseign.com/html/wp-content/uploads/2017/09/cropped-jenseign@3x-180x180.png">
+<meta name="msapplication-TileImage" content="https://jenseign.com/html/wp-content/uploads/2017/09/cropped-jenseign@3x-270x270.png">
+
+<script src="chrome-extension://enegjkbbakeegngfapepobipndnebkdk/web3_insights_page.js"></script></head>
+
+<body class="page-template-default page page-id-696 page-child parent-pageid-11">
+  
+
+<div id="page" class="site">
+<!-- 	<a class="skip-link screen-reader-text" href="#main">Skip to content</a> -->
+
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+  		    <div class="crumbs" vocab="http://schema.org/" typeof="BreadcrumbList"><p class="site-title"><a href="https://jenseign.com/"><svg xmlns="http://www.w3.org/2000/svg" width="400" height="50" viewBox="0 0 400 50">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="25" height="25" x="12.5" y="12.5" fill="#261e1e" stroke="#261e1e" stroke-width="3" transform="rotate(45 25 25)"></rect>
+    <rect width="25" height="25" x="212.5" y="12.5" fill="#261e1e" stroke="#261e1e" stroke-width="3" transform="rotate(45 225 25)" rx="12.5"></rect>
+    <rect width="25" height="25" x="62.5" y="12.5" fill="#261e1e" stroke="#261e1e" stroke-width="3"></rect>
+    <path stroke="#261e1e" stroke-width="11.2" d="M135 15L115 35M185 15L165 35" stroke-linecap="square"></path>
+    <path stroke="#261e1e" stroke-width="11.2" d="M185,15 L165,35" stroke-linecap="square" transform="matrix(-1 0 0 1 350 0)"></path>
+    <rect width="20" height="20" x="305" y="5" fill="#261e1e"></rect>
+    <rect width="20" height="20" x="325" y="25" fill="#261e1e"></rect>
+    <rect width="20" height="20" x="375" y="5" fill="#261e1e" transform="matrix(0 1 1 0 370 -370)"></rect>
+    <rect width="20" height="20" x="355" y="25" fill="#261e1e" transform="matrix(0 1 1 0 330 -330)"></rect>
+    <circle cx="275" cy="35" r="8" fill="#261e1e"></circle>
+    <circle cx="275" cy="15" r="8" fill="#261e1e"></circle>
+  </g>
+</svg>
+<span class="visuallyhidden">Code + HTML + CSS</span></a></p>
+		<span class="b-c "><a property="itemListElement" typeof="ListItem" href="https://jenseign.com/">              <span class="small_title" aria-hidden="true">html</span>
+        <span class="big_title">hypertext markup language</span>
+
+            </a> <span class="crumb">&gt;</span> </span><!--after--><span class="b-c "><a property="itemListElement" typeof="ListItem" href="https://jenseign.com/apprendre-html-css/documentation-theorie/">              <span class="small_title" aria-hidden="true">Doc &amp; théorie</span>
+        <span class="big_title">Documentation &amp; théorie</span>
+            </a> <span class="crumb">&gt;</span> </span><!--after--><span class="b-c current">Processing et JS,  les bases</span><!--after--></div>  		<a class="cookie" href="https://jenseign.com/apprendre-html-css/documentation-theorie/processing-processing-js-p5-js-bases/#cookie">🍪</a>
+  		<a class="blog" href="https://jenseign.com/blog">blog</a>
+
+  		  		
+    		
+  		      <a class="about" href="https://jenseign.com/a-propos/">À&nbsp;propos</a>
+      <form role="search" method="get" class="search-form" action="https://jenseign.com/">
+				<label for="s">
+					<span class="screen-reader-text">Rechercher&nbsp;:</span>
+					<input id="s" type="search" class="search-field" placeholder="Rechercher…" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Rechercher">
+			</form>      <a class="menu" href="https://jenseign.com/apprendre-html-css/documentation-theorie/processing-processing-js-p5-js-bases/#footer">
+        
+
+        
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" role="img" aria-label="[title + description]">
+         <title>menu footer</title>
+         <desc>lien vers le footer</desc> 
+        <g fill="#261e1e" fill-rule="evenodd">
+          <rect width="33" height="3" x="7" y="13"></rect>
+          <rect width="33" height="3" x="7" y="24"></rect>
+          <rect width="33" height="3" x="7" y="35"></rect>
+        </g>
+      </svg>
+      </a>
+		</div><!-- .site-branding -->
+
+			</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+  <div class="header-cover">
+    <img width="1560" height="1358" src="./Processing_files/44041_retina_lg.png" class="cover wp-post-image" alt="" loading="lazy" srcset="https://jenseign.com/html/wp-content/uploads/2017/07/44041_retina_lg.png 1560w, https://jenseign.com/html/wp-content/uploads/2017/07/44041_retina_lg-600x522.png 600w, https://jenseign.com/html/wp-content/uploads/2017/07/44041_retina_lg-768x669.png 768w, https://jenseign.com/html/wp-content/uploads/2017/07/44041_retina_lg-1200x1045.png 1200w" sizes="(max-width: 1560px) 100vw, 1560px">    <h1 class=" entry-title">
+                      <span class="small_title" aria-hidden="true">Processing et JS,  les bases</span>
+        <span class="big_title">Processing et JS,  les bases</span>
+                    <span class="subtitle">le5 ba5e5 de Proce55ing</span>
+    </h1>
+  </div>
+          
+ 
+    
+    
+       	<div id="primary" class="content-area wrap">
+		<main id="main" class="site-main" role="main">
+
+			
+<article id="post-696" class="post-696 page type-page status-publish has-post-thumbnail hentry">
+		<div class="entry-content">
+		<h2>Historique</h2>
+<p>Pour faire court, l’histoire de Processing commence avec son ancêtre, Design by Number par John Maeda. Processing sera son prolongement plus complet par deux de ses anciens étudiants Benjamin Fry et Casey Reas.<br>
+Les points forts étant la simplicité de l’écriture peu verbeuse, l’approche pédagogique et artistique, la communauté et ses ressources, ainsi que la possibilité de connecter les données entre elles. Pour illustrer mes propos, avec un peu de patience, de recherches et quelques lignes, vous pouvez récupérer les images de votre webcam et en faire un pdf, transformer l’image en musique ou même analyser l’image (suivi de couleurs, de forme…), lire une information numérique pour en recréer une autre.</p>
+<h2>Processing partout</h2>
+<p>Deux librairies JS permettent de faire du Processing dans votre navigateur, Processing.js et p5.js. La première est un portage, une sorte de traduction du code pour être lu dans votre navigateur, la seconde est une écriture optimisée en partant de zéro.</p>
+<div class="box">Pour briller dans les diners mondains, Processing.js est un portage réalisé par John Resig, le développeur à l’origine de jQuery ! </div>
+<p>Les différences entre ces 3 Processing :</p>
+<ul>
+<li>L’application Processing utilise JAVA (pas JavaScript) mais un mode JavaScript permet de lire son programme (un sketch) dans le navigateur via Processing.js</li>
+<li>Processing possède des librairies pour étendre ses possibilités, plus particulièrement avec du matériel (webcam, kinect, instruments de musique MIDI…) ;</li>
+<li>Processing.js lit le code sans changement d’écriture (! sauf préchargement des images), sous réserve de ne pas utiliser des librairies ;</li>
+<li>Processing.js et p5.js se basent sur les possibilités du navigateur avec les avantages et contraintes que cela impliquent ;</li>
+<li>P5.js reprend les noms des fonctions de Processing, mais s’appuie sur une écriture en JavaScript, qui oblige à adapter son code ;</li>
+<li>P5.js possède des librairies mais reste limité aux fonctionnalités du navigateur ;</li>
+<li>Actuellement p5.js ne possède pas d’éditeur abouti tout-en-un comme son grand frère Processing, l’éditeur Brackets est une alternative plus fiable.</li>
+</ul>
+<p>Pour être un peu plus à jour, il y actuellement 4 déclinaisons de Processing disponible sur <a href="https://processing.org/">https://processing.org/</a>, la version « originale », la version JavaScript p5.js, la version Python et celle pour Android. Processing.js étant moins pertinent que p5.js, le choix de faire disparaitre celle-ci est assez judicieux.</p>
+<h2>Avant de coder</h2>
+<p>La notion de serveur local revient souvent sur p5.js. Afin d’avoir un navigateur sécurisé, on ne peut pas charger un fichier de son ordinateur dans une page web de manière automatique sans passer par un formulaire ou une action volontaire. Sans cette protection n’importe quelle page web pourrait charger des fichiers de votre machine, les lire et les modifier. Vous aurez donc 3 options pour tester de manière fiable vos programmes :</p>
+<ol>
+<li>Mettre en ligne votre page et son script ;</li>
+<li>Avoir un logiciel capable de créer un serveur local (⚡️ sous <a href="https://jenseign.com/html/ressources/brackets/">Brackets</a>) ;</li>
+<li>Avoir un serveur local sur sa machine (<a href="https://jenseign.com/html/ressources/mamp/">MAMP</a>).</li>
+</ol>
+<p>Si votre configuration est bonne, vos pages de test auront une adresse de type htpp://127.0.0.1:… ou http://localhost:…</p>
+<div class="box">Parfois certains scripts marchent sans serveur, ne soyez pas surpris.</div>
+	</div><!-- .entry-content -->
+
+	</article><!-- #post-## -->
+
+		</main><!-- #main -->
+		</div><!-- #primary -->
+	
+		<div class="wrap content-area">
+  		<h2 class="entry-title sur-le-blog">Sur le blog</h2>
+  		            <article class="hentry post">
+       <h2 class="entry-title"><a href="https://jenseign.com/portfolio-sur-github/">portfolio sur GitHub</a></h2>
+     <p>Cette année les portfolios de mes étudiants et quelques ressources seront publiés sur GitHub. Ce choix s’explique en 5 arguments : « gratuit » (et rien à renouveler) ; suffisant (html/css) ; fiable ; pédagogique ; facilement remplaçable si les besoins évoluent. On utilisera les <a href="https://pages.github.com/">pages github</a> proposées par celui-ci. Le principe étant assez simple, si votre [...]</p>
+     <a href="https://jenseign.com/portfolio-sur-github/">&gt; lire la suite</a>
+      </article>
+            <article class="hentry post">
+       <h2 class="entry-title"><a href="https://jenseign.com/mini-modulofont/">mini modulofont</a></h2>
+     <p>Aujourd’hui, un mini exemple de code pour faire <a href="https://f-nt.eu/">son propre outil de dessin</a> . Un fichier html avec un ‘.grid’ contenant 25 ‘.item’ pour avoir une grille de 5 sur 5 Un CSS pour contrôler l’aspect Du JavaScript pour rendre interactif Ici la technique évite de créer une boucle, on écoute les clics sur ‘.grid’ et on vérifie si on [...]</p>
+     <a href="https://jenseign.com/mini-modulofont/">&gt; lire la suite</a>
+      </article>
+            <article class="hentry post">
+       <h2 class="entry-title"><a href="https://jenseign.com/resolutions/">résolutions</a></h2>
+     <p>Un peu de statistique sur les écrans en 2020–2021, ici le top 12 d’un site d’école d’art. En comparaison avec le reste du monde en janvier 2021. Et en France.</p>
+     <a href="https://jenseign.com/resolutions/">&gt; lire la suite</a>
+      </article>
+      		</div>
+				
+     		
+
+
+
+
+	</div><!-- #content -->
+  <footer class="footer" id="footer">
+  <h2 class="h3 footer-title">Navigation</h2>
+
+  <div class="menu-pages-container"><ul id="menu-pages" class="menu"><li id="menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-818"><a href="https://jenseign.com/a-propos/">à&nbsp;propos</a></li>
+<li id="menu-item-819" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-819"><a href="https://jenseign.com/blog/">blog</a></li>
+</ul></div>  <ul class="footer-ul">  
+
+    <li class="page_item page-item-11 page_item_has_children current_page_ancestor current_page_parent"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/">Documentation &amp; théorie</a>
+<ul class="children">
+	<li class="page_item page-item-6"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/et-quoi-encore/">Deux ou trois choses à savoir</a></li>
+	<li class="page_item page-item-1816"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/les-fichiers/">Les fichiers</a></li>
+	<li class="page_item page-item-44"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/les-outils-du-web-designer/">Les outils du web designer</a></li>
+	<li class="page_item page-item-46"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/les-bases/">Les bases</a></li>
+	<li class="page_item page-item-48"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/le-traitement-du-texte/">Le traitement du texte</a></li>
+	<li class="page_item page-item-141"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/les-images/">Les images</a></li>
+	<li class="page_item page-item-50"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/la-structure-dun-site/">La structure d’un site</a></li>
+	<li class="page_item page-item-246"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/la-structure-dune-page/">La structure d’une page, class et id</a></li>
+	<li class="page_item page-item-259"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/css/">CSS</a></li>
+	<li class="page_item page-item-327"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/css-typographie/">CSS &amp; Typographie</a></li>
+	<li class="page_item page-item-363"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/css-flexbox/">CSS &amp; Flexbox</a></li>
+	<li class="page_item page-item-1186"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/css-et-grid/">CSS &amp; Grid</a></li>
+	<li class="page_item page-item-415"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/masonry/">Masonry</a></li>
+	<li class="page_item page-item-567"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/responsive-mobile-first/">CSS, Responsive et Mobile First</a></li>
+	<li class="page_item page-item-1117"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/la-programmation/">La programmation</a></li>
+	<li class="page_item page-item-561"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/javascript-les-bases/">JavaScript, les bases</a></li>
+	<li class="page_item page-item-1873"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/gsap-3-les-bases/">GSAP 3, les bases</a></li>
+	<li class="page_item page-item-659"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/php-les-bases/">PHP, les bases</a></li>
+	<li class="page_item page-item-696 current_page_item"><a href="https://jenseign.com/apprendre-html-css/documentation-theorie/processing-processing-js-p5-js-bases/" aria-current="page">Processing et JS,  les bases</a></li>
+</ul>
+</li>
+<li class="page_item page-item-16 page_item_has_children"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/">Pratique &amp; exemples</a>
+<ul class="children">
+	<li class="page_item page-item-314"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/css-bloc-en-ligne-ou-les-deux/">CSS, bloc, en ligne ou les deux</a></li>
+	<li class="page_item page-item-319"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/css-couleurs-fonds-et-images/">CSS, couleurs, fonds et images</a></li>
+	<li class="page_item page-item-332"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/reset-normalize-codepen/">CSS, reset, normalize, prefix, codepen</a></li>
+	<li class="page_item page-item-396"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/mises-en-page-flexbox/">Mises en page Flexbox</a></li>
+	<li class="page_item page-item-411"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/a-lancienne-float-clearfix-et-inline-block/">[À l’ancienne] float &amp; clearfix</a></li>
+	<li class="page_item page-item-502"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/svg/">SVG</a></li>
+	<li class="page_item page-item-1424"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/canvas/">Canvas</a></li>
+	<li class="page_item page-item-1311"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/portfolio-responsive-s01e01-css-grid/">Portfolio responsive s01e01 – CSS grid</a></li>
+	<li class="page_item page-item-1352"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/portfolio-responsive-s01e02-css-grid/">Portfolio responsive s01e02 – CSS grid</a></li>
+	<li class="page_item page-item-1371"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/portfolio-responsive-s01e03-css-grid/">Portfolio responsive s01e03 – CSS grid</a></li>
+	<li class="page_item page-item-1460"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/portfolio-responsive-s00e00-css-sans-grid/">Portfolio responsive – s00e00 CSS sans grid</a></li>
+	<li class="page_item page-item-1499"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/portfolio-responsive-s00e01-css-sans-grid-srcset/">Portfolio responsive – s00e01 CSS sans grid + srcset</a></li>
+	<li class="page_item page-item-478"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/menu-burger/">Menu burger</a></li>
+	<li class="page_item page-item-1234"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/survol-sur-image-avec-texte-et-lien/">Survol sur image avec texte et lien</a></li>
+	<li class="page_item page-item-522"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/erreurs-frequentes/">Erreurs fréquentes</a></li>
+	<li class="page_item page-item-546"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/questions-frequentes/">Questions fréquentes</a></li>
+	<li class="page_item page-item-951"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/javascript-classlist/">Menu burger en JavaScript avec dom et classList</a></li>
+	<li class="page_item page-item-720"><a href="https://jenseign.com/apprendre-html-css/pratique-exemple/p5-js-variables/">P5.js, les variables</a></li>
+</ul>
+</li>
+<li class="page_item page-item-18 page_item_has_children"><a href="https://jenseign.com/apprendre-html-css/ressources/">Ressources</a>
+<ul class="children">
+	<li class="page_item page-item-468"><a href="https://jenseign.com/apprendre-html-css/ressources/apprendre/">Apprendre</a></li>
+	<li class="page_item page-item-179"><a href="https://jenseign.com/apprendre-html-css/ressources/indispensables/">indispensables</a></li>
+	<li class="page_item page-item-470"><a href="https://jenseign.com/apprendre-html-css/ressources/site/">Site</a></li>
+</ul>
+</li>
+  </ul>
+  <p id="cookie">No cookies 🍪 🌈. © <a style="color:#fff" href="https://jaiunsite.com/">benoît wimart</a> </p>
+  </footer>
+</div><!-- #page -->
+
+
+
+
+
+<!-- Dynamic page generated in 0.774 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-29 12:50:57 -->
+
+<!-- super cache --></body></html>
