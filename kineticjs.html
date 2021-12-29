@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+  <title>shadowplay_1 - another page</title>
+  <meta name="description" content="website description" />
+  <meta charset="utf-8">
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">formation<span class="logo_colour">H__++</span></a></h1>
+          <h2>formation.simple.avancées sur différents langages.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="cour.html">cours</a>
+              <ul class="ult">
+                <li><a href="htmlcour.html">html/css</a></li>
+                <li><a href="binhexa.html">binaire et hexa</a></li>
+              </ul>
+            </li>
+            <li><a href="exposer.html">Exposés</a>
+              <ul class="ult">
+                <li><a href="monexposer.html">Mon exposé</a></li>
+                <li><a href="autreexpo.html">un autre expo</a></li>
+              </ul>
+            </li>
+            <li class="selected"><a href="frameworksjs.html">FrameworksJs</a>
+              <ul class="ult">
+                <li><a href="kineticjs.html">kineticJs</a></li>
+                <li><a href="phaser.html">Phaser</a></li>
+                <li><a href="processingjs.html">processingJs</a></li>
+                <li><a href="mathjax.html">Mathjax</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">mon projet</a>
+              <ul class="ult">
+                <li><a href="cahiercharge.html">cahier des charges</a></li>
+                <li><a href="repartition.html">Répartition des taches</a></li>
+                <li><a href="présentation.html">Présentation</a></li>
+                <li><a href="production.html">production</a></li>
+              </ul>
+            </li>
+            <li><a href="perso.html">page perso</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div class="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>rebrique</h3>
+        <h5>jeudi 23 décembre 2021</h5>
+        <p>site créer en 2021 pour l'apprentissage en ligne de l'informatique en générale.<br /><a href="#">lire
+            plus
+            plus</a></p>
+        <h5> construction et disign</h5>
+        <p>le site a été conçue par un collectif d'étudiant de l'université de douala au cameroun.<br /><a href="#">lire
+            plus</a></p>
+        <h3>liens d'utilisateur</h3>
+        <ul>
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+        </ul>
+        <h3>recherche</h3>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Entrer un mot clé....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png"
+              alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div class="content">
+        <!-- insert the page content here -->
+        <h1><span>I</span>Piloter canvas avec KineticJS</h1>
+        <p>KineticJS est un framework Javascript qui permet d'utiliser plus facilement l'API Canvas du HTML5. Il étend
+          les possibilités de Canvas : groupes, calques, événements... Il permet également de réaliser des animations
+          très fluides par un système de buffers.
+
+          Pour suivre ce tutoriel, vous avez besoin de connaître Javascript. Si ce n'est pas le cas, commencez par vous
+          initier à ce langage, par exemple avec ce tutoriel.<br> Je ne donne aucune indication quant au fonctionnement
+          de
+          ce langage dans ce cours qui est axé uniquement sur l'utilisation de KineticJS .</p>
+        <h2><span>I-1</span>Premières formes</h2>
+        <p>Dans ce premier chapitre nous allons voir comment démarrer avec KineticJS et dessiner des formes prédéfinies.
+        </p>
+        <h2>Mise en route</h2>
+        <p>Canvas est une nouvelle fonctionnalité introduite avec le HTML5. Pour être honnête, c'est Apple qui l'a
+          inventée et elle a été intégrée dans les spécifications du W3C et celles du WhatWG.
+
+          Il existe de nombreuses librairies Javascript pour piloter Canvas :</p>
+        <ul>
+          <li>EaselJS</li>
+          <li>jCanvaScript</li>
+          <li>jCanvas</li>
+          <li>Artisan JS</li>
+          <li>oCanvas</li>
+          <li>jcotton</li>
+          <li>Fabric</li>
+          <li>canvasxpress</li>
+          <li>gury</li>
+          <li>...</li>
+        </ul>
+        <p>Il me semble que KineticJS , créée et maintenue par Eric Drowell, est l'une des plus efficaces et elle est
+          d'autre part bien documentée.<br>
+
+          Le site est plutôt bien fait et comporte de nombreuses démonstrations. Il y a avait un forum dédié que
+          j'aimais bien, mais il a disparu au profit de stackoverflow. Les tutoriels sont bien organisés et couvrent
+          presque toutes les fonctionnalités, on peut toutefois regretter le fait qu'ils soient souvent en retard sur
+          les options proposées.<br>
+
+          Vous n'avez pas forcément besoin de savoir manipuler les commandes de base de l'API Canvas pour utiliser
+          KineticJS mais il est évident que vous utiliserez cette librairie de façon beaucoup plus efficace si vous avez
+          des notions concernant cette API.</p>
+        <h3>Installation</h3>
+        <p>Pour utiliser KineticJS vous devez d'abord télécharger la librairie sur le site pour obtenir à coup sûr la
+          dernière version et la placer dans un répertoire de votre site. Au moment où j'écris ce tutoriel, la dernière
+          version est la 4.0.4.
+
+          Le lien ouvre directement le fichier dans votre navigateur :</p>
+        <img src="image/imgkine.png" alt="une imge de description">
+        <p>Il suffit de faire un "Enregistrer sous..." pour placer le fichier dans un répertoire ("js" ou "librairies"
+          ou autre). Pour ce tutoriel je le place dans un répertoire "js". Il suffit ensuite de le référencer sur les
+          pages web :</p>
+        <p>Kinetic est l'espace de nom qui permet d'isoler tout ce que nous allons faire avec cette librairie. La
+          première action est de créer une scène (Stage) pour contenir nos créations. Le constructeur de cet objet
+          attend 3 paramètres. Le premier est l'identifiant du contenant HTML, dans notre cas cet identifiant est
+          "kinetic". Les deux paramètres suivants définissent la largeur et la hauteur de la scène.</p>
+        <img src="image/imgkine2.png">
+
+
+
+
+
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">accueil</a> | <a href="cour.html">cour</a> | <a href="frameworksjs.html">frameworksjs</a>
+        | <a href="another_page.html">mon projet</a> | <a href="contact.html">parge perso</a></p>
+      <p>Copyright &copy; formationH__++ | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a
+          href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a
+          href="http://www.html5webtemplates.co.uk">cour gratuit</a></p>
+    </div>
+  </div>
+</body>
+
+</html>

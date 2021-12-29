@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <title>shadowplay_1 - another page</title>
+    <meta name="description" content="website description" />
+    <meta charset="utf-8">
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="index.html">formation<span class="logo_colour">H__++</span></a></h1>
+                    <h2>formation.simple.avancées sur différents langages.</h2>
+                </div>
+            </div>
+            <div id="menubar">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">accueil</a></li>
+                        <li><a href="cour.html">cours</a>
+                            <ul class="ult">
+                                <li><a href="htmlcour.html">html/css</a></li>
+                                <li><a href="binhexa.html">binaire et hexa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="exposer.html">Exposés</a>
+                            <ul class="ult">
+                                <li><a href="monexposer.html">Mon exposé</a></li>
+                                <li><a href="autreexpo.html">un autre expo</a></li>
+                            </ul>
+                        </li>
+                        <li class="selected"><a href="frameworksjs.html">FrameworksJs</a>
+                            <ul class="ult">
+                                <li><a href="kineticjs.html">kineticJs</a></li>
+                                <li><a href="phaser.html">Phaser</a></li>
+                                <li><a href="processingjs.html">processingJs</a></li>
+                                <li><a href="mathjax.html">Mathjax</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">mon projet</a>
+                            <ul class="ult">
+                                <li><a href="cahiercharge.html">cahier des charges</a></li>
+                                <li><a href="repartition.html">Répartition des taches</a></li>
+                                <li><a href="présentation.html">Présentation</a></li>
+                                <li><a href="production.html">production</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="perso.html">page perso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content_header"></div>
+        <div class="site_content">
+            <div class="sidebar">
+                <!-- insert your sidebar items here -->
+                <h3>rebrique</h3>
+                <h5>jeudi 23 décembre 2021</h5>
+                <p>site créer en 2021 pour l'apprentissage en ligne de l'informatique en générale.<br /><a href="#">lire
+                        plus
+                        plus</a></p>
+                <h5> construction et disign</h5>
+                <p>le site a été conçue par un collectif d'étudiant de l'université de douala au cameroun.<br /><a
+                        href="#">lire
+                        plus</a></p>
+                <h3>liens d'utilisateur</h3>
+                <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
+                </ul>
+                <h3>recherche</h3>
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text" name="search_field" value="Entrer un mot clé....." />
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;"
+                            src="style/search.png" alt="Search" title="Search" />
+                    </p>
+                </form>
+            </div>
+            <div class="content">
+                <!-- insert the page content here -->
+                <h1><span>I</span>HISTORIQUE</h1>
+                <p>Pour faire court, l’histoire de Processing commence avec son ancêtre, Design by Number par John
+                    Maeda. Processing sera son prolongement plus complet par deux de ses anciens étudiants Benjamin Fry
+                    et Casey Reas.<br>
+                    Les points forts étant la simplicité de l’écriture peu verbeuse, l’approche pédagogique et
+                    artistique, la communauté et ses ressources, ainsi que la possibilité de connecter les données entre
+                    elles. Pour illustrer mes propos, avec un peu de patience, de recherches et quelques lignes, vous
+                    pouvez récupérer les images de votre webcam et en faire un pdf, transformer l’image en musique ou
+                    même analyser l’image (suivi de couleurs, de forme…), lire une information numérique pour en recréer
+                    une autre.</p>
+                <h3>PROCESSING PARTOUT</h3>
+                <p>Deux librairies JS permettent de faire du Processing dans votre navigateur, Processing.js et p5.js.
+                    La première est un portage, une sorte de traduction du code pour être lu dans votre navigateur, la
+                    seconde est une écriture optimisée en partant de zéro.</p>
+                <p>Pour briller dans les diners mondains, Processing.js est un portage réalisé par John Resig, le
+                    développeur à l’origine de jQuery !</p>
+                <p>Les différences entre ces 3 Processing :</p>
+                <ul>
+                    <li>L’application Processing utilise JAVA (pas JavaScript) mais un mode JavaScript permet de lire
+                        son programme (un sketch) dans le navigateur via Processing.js</li>
+                    <li>Processing possède des librairies pour étendre ses possibilités, plus particulièrement avec du
+                        matériel (webcam, kinect, instruments de musique MIDI…) ;</li>
+                    <li>Processing.js lit le code sans changement d’écriture (! sauf préchargement des images), sous
+                        réserve de ne pas utiliser des librairies ;
+                    </li>
+                    <li>Processing.js et p5.js se basent sur les possibilités du navigateur avec les avantages et
+                        contraintes que cela impliquent ;</li>
+                    <li>P5.js reprend les noms des fonctions de Processing, mais s’appuie sur une écriture en
+                        JavaScript, qui oblige à adapter son code ;</li>
+                    <li>P5.js possède des librairies mais reste limité aux fonctionnalités du navigateur ;</li>
+                    <li>Actuellement p5.js ne possède pas d’éditeur abouti tout-en-un comme son grand frère Processing,
+                        l’éditeur Brackets est une alternative plus fiable.</li>
+                </ul>
+                <p>Pour être un peu plus à jour, il y actuellement 4 déclinaisons de Processing disponible sur <a
+                        href="https://processing.org/ ">https://processing.org/, </a> la version « originale », la
+                    version JavaScript p5.js, la version Python et celle pour Android. Processing.js étant moins
+                    pertinent que p5.js, le choix de faire disparaitre celle-ci est assez judicieux.</p>
+                <h3>AVANT DE CODER</h3>
+                <p>La notion de serveur local revient souvent sur p5.js. Afin d’avoir un navigateur sécurisé, on ne peut
+                    pas charger un fichier de son ordinateur dans une page web de manière automatique sans passer par un
+                    formulaire ou une action volontaire. Sans cette protection n’importe quelle page web pourrait
+                    charger des fichiers de votre machine, les lire et les modifier. Vous aurez donc 3 options pour
+                    tester de manière fiable vos programmes :</p>
+                <ol>
+                    <li>Mettre en ligne votre page et son script ;</li>
+                    <li>Avoir un logiciel capable de créer un serveur local (⚡️ sous Brackets) ;</li>
+                    <li>Avoir un serveur local sur sa machine (MAMP).</li>
+                </ol>
+                <p>Si votre configuration est bonne, vos pages de test auront une adresse de type htpp://127.0.0.1:… ou
+                    http://localhost:…</p>
+                <p>Parfois certains scripts marchent sans serveur, ne soyez pas surpris.</p>
+
+
+
+
+
+            </div>
+        </div>
+        <div id="content_footer"></div>
+        <div id="footer">
+            <p><a href="index.html">accueil</a> | <a href="cour.html">cour</a> | <a
+                    href="frameworksjs.html">frameworksjs</a>
+                | <a href="another_page.html">mon projet</a> | <a href="contact.html">parge perso</a></p>
+            <p>Copyright &copy; formationH__++ | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a
+                    href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a
+                    href="http://www.html5webtemplates.co.uk">cour gratuit</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

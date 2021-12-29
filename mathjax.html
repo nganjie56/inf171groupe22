@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <title>shadowplay_1 - another page</title>
+    <meta name="description" content="website description" />
+    <meta charset="utf-8">
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="index.html">formation<span class="logo_colour">H__++</span></a></h1>
+                    <h2>formation.simple.avancées sur différents langages.</h2>
+                </div>
+            </div>
+            <div id="menubar">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">accueil</a></li>
+                        <li><a href="cour.html">cours</a>
+                            <ul class="ult">
+                                <li><a href="htmlcour.html">html/css</a></li>
+                                <li><a href="binhexa.html">binaire et hexa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="exposer.html">Exposés</a>
+                            <ul class="ult">
+                                <li><a href="monexposer.html">Mon exposé</a></li>
+                                <li><a href="autreexpo.html">un autre expo</a></li>
+                            </ul>
+                        </li>
+                        <li class="selected"><a href="frameworksjs.html">FrameworksJs</a>
+                            <ul class="ult">
+                                <li><a href="kineticjs.html">kineticJs</a></li>
+                                <li><a href="phaser.html">Phaser</a></li>
+                                <li><a href="processingjs.html">processingJs</a></li>
+                                <li><a href="mathjax.html">Mathjax</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">mon projet</a>
+                            <ul class="ult">
+                                <li><a
+                                        href="https://www.manager-go.com/gestion-de-projet/dossiers-methodes/elaborer-un-cdc">cahier
+                                        des charges</a></li>
+                                <li><a href="#">Répartition des taches</a></li>
+                                <li><a href="#">Présentation</a></li>
+                                <li><a href="#">production</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="perso.html">page perso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content_header"></div>
+        <div class="site_content">
+            <div class="sidebar">
+                <!-- insert your sidebar items here -->
+                <h3>rebrique</h3>
+                <h5>jeudi 23 décembre 2021</h5>
+                <p>site créer en 2021 pour l'apprentissage en ligne de l'informatique en générale.<br /><a href="#">lire
+                        plus
+                        plus</a></p>
+                <h5> construction et disign</h5>
+                <p>le site a été conçue par un collectif d'étudiant de l'université de douala au cameroun.<br /><a
+                        href="#">lire
+                        plus</a></p>
+                <h3>liens d'utilisateur</h3>
+                <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
+                </ul>
+                <h3>recherche</h3>
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text" name="search_field" value="Entrer un mot clé....." />
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;"
+                            src="style/search.png" alt="Search" title="Search" />
+                    </p>
+                </form>
+            </div>
+            <div class="content">
+                <!-- insert the page content here -->
+                <h1><span>I</span>Introduction</h1>
+                <p>L’écriture d’expressions et d’équations mathématiques dans des pages HTML, même si l’usage peut ne
+                    pas être courant, voire exceptionnel, a toujours été problématique. Mais parfois on a besoin
+                    d’afficher des formules avec un bon rendu ergonomique.
+
+                    Soit l’expression est brute de fonderie, peu ergonomique et difficilement lisible, notamment avec la
+                    présence de fractions, exemple :</p>
+                <p>f(x) = (x + 2) / (2x + 1) x ∈ R, x ≠ − 1/2</p>
+                <p>Soit une image est créée à partir d’outils comme Formule Math dans LibreOffice, image qui doit être
+                    recréée si la formule doit être modifiée et pour laquelle le texte ne peut pas être copié par
+                    l’internaute :</p>
+                <img src="image/imgmathjax.png">
+                <p>Au tout début, HTML 5 devait intégrer le standard MathML pour l’écriture d’expressions mathématiques
+                    en HTML. Mais les éditeurs de navigateurs en ont décidément autrement. Le support de MathML dans les
+                    navigateurs principaux (Chrome, FireFox, MS Internet Explorer, Safari) était disparate et il y avait
+                    trop de désaccords sur ce sujet.
+
+                    Google, l’éditeur de Chrome, a probablement raison d’ailleurs en décidant de ne pas porter MathML en
+                    standard dans son navigateur. Les arguments avancés sont l’usage de MathML restreint à un public de
+                    scientifiques et l’existence de librairies Javascript très puissantes qui sont en mesure de répondre
+                    au besoin.</p>
+                <p>Et effectivement, MATHJAX >> est une librairie Javascript, compatible avec tous les navigateurs,
+                    simple et très évoluée pour le rendu des expressions mathématiques en HTML. Le rendu est
+                    impressionnant, le codage simple et le contenu des expressions devient ainsi aisément modifiable en
+                    cas d’erreur ou de besoin. Voici le rendu de l’exemple ci-dessus avec MathJax (option AsciiMath)</p>
+                <img src="image/imgmathjax.png">
+                <p>MathJax gère plusieurs syntaxes en entrée (Tex/Latex, AsciiMath, MathML - MML), la syntaxe AsciiMath
+                    étant de loin la plus aisée pour des besoins simples. D’autres librairies Javascript existent pour
+                    formater des expressions mathématiques mais la syntaxe AsciiMath y est très souvent non supportée,
+                    la librairie katex >> par exemple ne supporte que le langage Tex/Latex.
+
+                    Cet article n’est pas un tutoriel pour écrire des équations de maths/physique (via MathJax).</p>
+                <p>par exemple ne supporte que le langage Tex/Latex.
+
+                    Cet article n’est pas un tutoriel pour écrire des équations de maths/physique (via MathJax).</p>
+                <ul>
+                    <li>Appliquer du style sur une portion d’équation</li>
+                    <li>Mettre en évidence une équation</li>
+                    <li>Numéroter des équations</li>
+                    <li>Centrer les équations sur le signe =</li>
+                </ul>
+                <h3>Mécanique, configuration de MathJax</h3>
+                <p>Pour schématiser la mécanique de MathJax :</p>
+                <img src="image/imgmathjax2.png">
+                <p>Une ou plusieurs syntaxes en entrée sont possibles (AsciiMath, Tex/Latex, MathML) et l’expression
+                    mathématique sera traduite graphiquement dans un format de sortie (HTML-CSS, SVG, MathML si le
+                    navigateur supporte le langage MathML comme FireFox).
+
+                    La librairie JavaScript MathJax est typiquement appelée avec la syntaxe ci-dessous :
+
+                    <chemin d’installation>/MathJax.js?config=<syntaxe(s) en entrée>_<format(s) de sortie><br>
+                                La documentation officielle décrit les combinaisons de configurations possibles :
+                </p>
+
+            </div>
+        </div>
+        <div id="content_footer"></div>
+        <div id="footer">
+            <p><a href="index.html">accueil</a> | <a href="cour.html">cour</a> | <a
+                    href="frameworksjs.html">frameworksjs</a>
+                | <a href="another_page.html">mon projet</a> | <a href="contact.html">parge perso</a></p>
+            <p>Copyright &copy; formationH__++ | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a
+                    href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a
+                    href="http://www.html5webtemplates.co.uk">cour gratuit</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

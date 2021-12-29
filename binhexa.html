@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <title>binaire et hexadecimal</title>
+    <meta name="description" content="website description" />
+    <meta charset="utf-8">
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="index.html">formation<span class="logo_colour">H__++</span></a></h1>
+                    <h2>formation.simple.avancées sur différents langages.</h2>
+                </div>
+            </div>
+            <div id="menubar">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">accueil</a></li>
+                        <li class="selected"><a href="cour.html">cours</a>
+                            <ul class="ult">
+                                <li><a href="htmlcour.html">html/css</a></li>
+                                <li><a href="binhexa.html">binaire et hexa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="exposer.html">Exposés</a>
+                            <ul class="ult">
+                                <li><a href="monexposer.html">Mon exposé</a></li>
+                                <li><a href="autreexpo.html">un autre expo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="frameworksjs.html">FrameworksJs</a>
+                            <ul class="ult">
+                                <li><a href="kineticjs.html">kineticJs</a></li>
+                                <li><a href="phaser.html">Phaser</a></li>
+                                <li><a href="processingjs.html">processingJs</a></li>
+                                <li><a href="mathjax.html">Mathjax</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">mon projet</a>
+                            <ul class="ult">
+                                <li><a href="cahiercharge.html">cahier des charges</a></li>
+                                <li><a href="repartition.html">Répartition des taches</a></li>
+                                <li><a href="présentation.html">Présentation</a></li>
+                                <li><a href="production.html">production</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="perso.html">page perso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content_header"></div>
+        <div class="site_content">
+            <div class="sidebar">
+                <!-- insert your sidebar items here -->
+                <h3>rebrique</h3>
+                <h5>jeudi 23 décembre 2021</h5>
+                <p>site créer en 2021 pour l'apprentissage en ligne de l'informatique en générale.<br /><a href="#">lire
+                        plus
+                        plus</a></p>
+                <h5> construction et disign</h5>
+                <p>le site a été conçue par un collectif d'étudiant de l'université de douala au cameroun.<br /><a
+                        href="#">lire
+                        plus</a></p>
+                <h3>liens d'utilisateur</h3>
+                <ul>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
+                </ul>
+                <h3>recherche</h3>
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text" name="search_field" value="Entrer un mot clé....." />
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;"
+                            src="style/search.png" alt="Search" title="Search" />
+                    </p>
+                </form>
+            </div>
+            <div class="content">
+                <!-- insert the page content here -->
+                <div class="htmlcour">
+                    <h1><span>I</span>binaire</h1>
+                    <p>Le système binaire est le système de numération ne possédant que deux chiffres (appelés bits) : 0
+                        et 1. Il utilise donc la base 2. Autrement dit, c'est une manière d'écrire les entiers naturels
+                        avec les seuls chiffres 0 ou 1.
+
+                        C'est un système positionnel : les entiers s'écrivent comme une succession de 0 et de 1, mais la
+                        signification du 1 dépend de sa position dans le nombre : le chiffre 1 peut représenter un,
+                        deux, quatre, huit, seize, ...</p>
+                    <ul>
+                        <li>Le nombre Zéro s'écrit 0 ;</li>
+                        <li>Le nombre Un s'écrit 1 ;</li>
+                        <li>Le nombre Deux s'écrit 10 ;</li>
+                        <li>Le nombre Deux s'écrit 10 ;</li>
+                    </ul>
+                    <p>Plus généralement, pour « traduire » en système décimal un entier écrit en système binaire, on
+                        procède ainsi :</p>
+                    <ul>
+                        <li>On écrit au-dessous de chaque chiffre les puissances croissantes de 2 en partant de la
+                            droite ;</li>
+                        <li>On écrit au-dessous de chaque chiffre les puissances croissantes de 2 en partant de la
+                            droite ;</li>
+                    </ul>
+                    <p>1100010111 vaut sept-cent-quatre-vingt-onze.<br>
+
+
+                        Pour convertir un nombre décimal en nombre binaire, il suffit de connaître les puissances de 2 :
+                        2, 4, 8, 16, 32, 64 etc<br>
+
+                        Exemple : 61.<br>
+                        On y trouve une fois 32, on peut donc déjà écrire 100000. Un deuxième 32 est impossible, cela
+                        dépasserait 61. On est donc contraints à ajouter 16 (10000bin), puis 8 (1000bin) : 1110000bin.
+                        Il manque encore 5, donc 4 et 1, en puissances de 2 (respectivement 22 et 20). On arrive donc à
+                        1110101, pour 61.
+                        On peut faire pareil avec d'autres nombres, comme 29 :
+                        29 - 16 (10000bin) = 13 ;
+                        13 - 8 = 5 -> 8 = 001000bin et donc 29-24 = 111000bin ;
+                        5 = 101bin -> 111000bin + 101bin = 111101bin
+                        29 s'écrit donc 111101bin, et 61 1110101.
+                        Ecriture des 7 premiers entiers</p>
+                    <br>
+                    <p>Le principe de la base deux, tout comme celui de la base dix, est de former des paquets
+
+                        Si vous regardez vos deux mains, vous voyez un paquet de doigts que vous notez 10, un paquet de
+                        doigts (1) et aucun autre doigt à compter(0).<br>
+
+                        C'est une numération dite de position. Quand on écrit "12", le "1" en première position
+                        correspond à un paquet de dix objets( dix doigts par exemple) et le chiffre en deuxième position
+                        correspond à des unités (deux doigts supplémentaires sur une photo de vos deux mains par un
+                        petit plaisantin par exemple".<br>
+
+                        En base deux, c'est pareil, sauf qu'on n'attend pas d'avoir dix objets pour former un premier
+                        paquet, on forme un petit paquet dès qu'il y a deux objets<br>
+
+                        et on note<br>
+                        ................................................................................................................................................................................................(1
+                        0)base2
+
+                        ce petit paquet de deux objets.
+
+                        Alors trois objets seront notés en base 2
+                        ...............................................................................................................................................(
+                        1 1)base2
+
+                        Quand, en base dix, vous formez dix paquets de dix, vous chiffrez 100, un paquet de paquets.
+
+                        En base 2, quatre objets, c'est un paquet de paquets. On le note
+                        .........................................................................................................(
+                        1 0 0)base2
+
+                        Puis cinq
+                        objets........................................................................................................................................................................................(1
+                        0 1 )base2
+
+                        Puis
+                        six....................................................................................................................................................................................................(1
+                        1 0 )base2<br>
+
+                        On remarque qu'on n'a besoin que de deux chiffres : le 1 et le 0.<br>
+
+                        Puis sept
+                        ................................................................................................................................................................................................(
+                        1 1 1)base2.</p>
+                    <h2><span>1-1</span>Opération</h2>
+                    <p>L'avantage du système binaire, c'est que les tables d'addition et de multiplication sont très
+                        simples.<br>
+
+                        0+0=0<br>
+                        0+1=1<br>
+                        1+1=10<br>
+                        0*0=0<br>
+                        0*1=0<br>
+                        1*1=1<br>
+                        Exemple :<br>
+
+                        10100111001 + 11000110101 = 101101101110<br>
+
+                        100111 * 110010 = 11110011110</p>
+                    <h2>
+                        <span>1-2</span>Utilité
+                    </h2>
+                    <p>Les microprocesseurs des ordinateurs ne comprennent que le langage binaire. Soit le courant
+                        électrique passe, soit il ne passe pas. Mais il est facile de passer d'une base vers une autre.
+                        Par exemple 0 en base 2 est 0, 1 en base 2 est 1, 2 en base 2 est 10 et 3 en base 2 est 11. On
+                        peut également passer de la base 2 à la base 10. On peut même faire correspondre une lettre de
+                        l'alphabet à un nombre binaire en utilisant la table ASCII qui a été acceptée par tout le monde.
+                        C'est pourquoi on peut écrire sur un ordinateur : les lettres sont transformées en nombre
+                        binaire en utilisant la correspondance avec la table ASCII, nombre binaire que l'ordinateur peut
+                        comprendre.</p>
+                    <h1><span>II</span>hexadécimal</h1>
+                    <p>Les microprocesseurs des ordinateurs ne comprennent que le langage binaire. Soit le courant
+                        électrique passe, soit il ne passe pas. Mais il est facile de passer d'une base vers une autre.
+                        Par exemple 0 en base 2 est 0, 1 en base 2 est 1, 2 en base 2 est 10 et 3 en base 2 est 11. On
+                        peut également passer de la base 2 à la base 10. On peut même faire correspondre une lettre de
+                        l'alphabet à un nombre binaire en utilisant la table ASCII qui a été acceptée par tout le monde.
+                        C'est pourquoi on peut écrire sur un ordinateur : les lettres sont transformées en nombre
+                        binaire en utilisant la correspondance avec la table ASCII, nombre binaire que l'ordinateur peut
+                        comprendre.</p>
+                    <h2><span>2-1</span>liste des prémier nombre hexadécimaux</h2>
+                    <p>Avec l'hexadécimal on compte avec plus de valeur qu'en décimal. Concrètement, en décimal on
+                        utilise les chiffres de 0 à 9, tandis qu'en hexadécimal on se sert des chiffres de 0 à 15.
+                        Il est donc important de se souvenir qu'il y a 16 chiffres en hexadécimal.
+
+                        En théorie pour compter en hexadécimal on devrait le faire de cette façon : 0, 1, 2, 3, 4, 5, 6,
+                        7, 8, 9, 10, 11, 12, 13, 14, 15. Mais ce n'est pas possible d'utiliser les nombres 10 à 15 alors
+                        on va les remplacer par un autre type de notation. Par conséquent nous allons utiliser des
+                        lettres (de "a" à "f").
+
+                        Voici alors une liste des premiers nombres hexadécimal : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C,
+                        D, E, F.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="content_footer"></div>
+        <div id="footer">
+            <p><a href="index.html">accueil</a> | <a href="cour.html">cour</a> | <a
+                    href="frameworksjs.html">frameworksjs</a>
+                | <a href="another_page.html">mon projet</a> | <a href="contact.html">parge perso</a></p>
+            <p>Copyright &copy; formationH__++ | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a
+                    href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a
+                    href="http://www.html5webtemplates.co.uk">cour gratuit</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
